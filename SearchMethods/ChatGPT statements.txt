@@ -1,0 +1,13 @@
+﻿I used ChatGPT to help create a base to build on. I used several statements. They are as follows:
+
+Write me an A* Pathfinding algorithm in C#
+Write me an A* Pathfinding algorithm in C# that loads cities with coordinates from a csv
+Can you change the AStar class above to use breadth-first search
+Can you change the AStar class above to use depth first search?
+can you change the AStar class above to use ID-DFS search?
+I got an error. startNode in the RetracePath function call does not seem to be defined
+You did pass startNode to DepthLimitedSearch, but it was passed into the currentNode variable. No startNode is defined in that method though when you then pass it to RetracePath
+I'm sorry, this seems like it is having issues overall. Can we start over with a fresh implementation of a depth limited search?
+Can you generate me a best-first search?
+The previous example does find a path, but it does not seem to be showing the path. You only ever add the start node to the path before returning
+you only assign the end node to path, but I need all the nodes in the path from start to finish
